@@ -11,13 +11,18 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
+		<tr *ngFor="let cancha of canchas">
 			<td>{{cancha.nro}}</td>
 			<td>{{cancha.tipo}}</td>
 			<td>{{cancha.cant_jugadores}}</td>
 			<td>{{cancha.precio}}</td>
-			<td>{{cancha.turnos_disponibles}}</td>
-			<td></td
+			<td>
+				<span *ngIf="cancha.turnos_disponibles==0">TURNOS AGOTADOS</span>
+			</td>
+			<!--span *ngIf="cancha.turnos_disponibles==0; then thenBlock else elseBlock"-->
+			<!--ng-template #thenBlock>TURNOS AGOTADOS</ng-template-->
+			<!--ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template></span>-->
+			<td>operaciones hacer</td>
 	    </tr>
 	</tbody>
 </table>
