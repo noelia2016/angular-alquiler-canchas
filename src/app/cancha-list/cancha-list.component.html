@@ -1,5 +1,5 @@
 <h3>Listado de canchas disponibles</h3>
-<table class="table table-sm">
+<table class="table-responsive{-sm|-md|-lg|-xl}">
 	<thead class="table-success">
 		<tr>
 			<th scope="col">Cancha Nro </th>
@@ -15,9 +15,9 @@
 			<td>{{cancha.nro}}</td>
 			<td>{{cancha.tipo}}</td>
 			<td>{{cancha.cant_jugadores}}</td>
-			<td>{{cancha.precio}}</td>
+			<td>{{cancha.precio | currency}}</td>
 			<td>
-				<span *ngIf="cancha.turnos_disponibles==0">TURNOS AGOTADOS</span>
+				<span class="alert alert-dark" *ngIf="cancha.turnos_disponibles==0">AGOTADOS</span>
 			</td>
 			<!--span *ngIf="cancha.turnos_disponibles==0; then thenBlock else elseBlock"-->
 			<!--ng-template #thenBlock>TURNOS AGOTADOS</ng-template-->

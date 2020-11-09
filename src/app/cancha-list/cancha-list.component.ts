@@ -50,6 +50,15 @@ export class CanchaListComponent implements OnInit {
       "turnos_disponibles": 0,
     },
 
+    {
+      "nro": 6,
+      "tipo": "sintetico",
+      "cant_jugadores": 5,
+      "precio": 180,
+      "turnos_disponibles": 7,
+    },
+
+
   ]
 
   constructor() { }
