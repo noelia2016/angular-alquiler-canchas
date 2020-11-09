@@ -4,5 +4,5 @@ export interface Cancha {
 	cant_jugadores: number;
 	precio: number;
 	turnos_disponibles: number;
-	turnos_solicitados: number;
+	turnos: number;
 } 
