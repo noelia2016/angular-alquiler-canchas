@@ -16,6 +16,7 @@ export class CanchaListComponent implements OnInit {
     	"cant_jugadores": 5,
     	"precio": 50,
     	"turnos_disponibles": 5,
+      "turnos_solicitados": 0,
     },
 
     {
@@ -24,6 +25,7 @@ export class CanchaListComponent implements OnInit {
       "cant_jugadores": 11,
       "precio": 350,
       "turnos_disponibles": 1,
+      "turnos_solicitados": 0,
     },
 
     {
@@ -32,6 +34,7 @@ export class CanchaListComponent implements OnInit {
       "cant_jugadores": 7,
       "precio": 150,
       "turnos_disponibles": 2,
+      "turnos_solicitados": 0,
     }, 
 
     {
@@ -40,6 +43,7 @@ export class CanchaListComponent implements OnInit {
       "cant_jugadores": 8,
       "precio": 250,
       "turnos_disponibles": 5,
+      "turnos_solicitados": 0,
     },
 
     {
@@ -48,6 +52,7 @@ export class CanchaListComponent implements OnInit {
       "cant_jugadores": 5,
       "precio": 180,
       "turnos_disponibles": 0,
+      "turnos_solicitados": 0,
     },
 
     {
@@ -56,6 +61,7 @@ export class CanchaListComponent implements OnInit {
       "cant_jugadores": 5,
       "precio": 180,
       "turnos_disponibles": 7,
+      "turnos_solicitados": 0,
     },
 
 
@@ -64,6 +70,17 @@ export class CanchaListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  downTurnos(cancha: Cancha): void {
+    if (cancha.turnos_solicitados > 0)
+      cancha.turnos_solicitados --;
+  }
+
+  upTurnos(cancha: Cancha): void {
+    if (cancha.turnos_solicitados < cancha.turnos_disponibles)
+      cancha.turnos_solicitados ++;
   }
 
 }
