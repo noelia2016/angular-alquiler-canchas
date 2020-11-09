@@ -6,11 +6,19 @@ import { AppComponent } from './app.component';
 import { CanchaListComponent } from './cancha-list/cancha-list.component';
 
 import { FormsModule } from '@angular/forms';
+import { CanchaContactComponent } from './cancha-contact/cancha-contact.component';
+import { ComplejoCanchasComponent } from './complejo-canchas/complejo-canchas.component';
+import { CarritoComponent } from './carrito/carrito.component';
+import { CanchaAboutComponent } from './cancha-about/cancha-about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CanchaListComponent
+    CanchaListComponent,
+    CanchaContactComponent,
+    ComplejoCanchasComponent,
+    CarritoComponent,
+    CanchaAboutComponent
   ],
   imports: [
     BrowserModule,

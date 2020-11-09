@@ -1,0 +1,22 @@
+*{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos para el pie de pagina */
+footer, nav {
+    background: black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold; /* poner en negrita */
+    font-size: 18px;
+    height: auto;
+    color: white;
+}
+
+table, td, table thead th {
+  border: 1px solid black;
+}
+
