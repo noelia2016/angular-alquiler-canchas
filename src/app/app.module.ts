@@ -28,4 +28,10 @@ import { CanchaAboutComponent } from './cancha-about/cancha-about.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+    art={
+    codigo:null,
+    descripcion:null,
+    precio:null
+  }
+ }

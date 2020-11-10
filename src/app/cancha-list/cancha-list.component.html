@@ -20,12 +20,9 @@
 				<span class="alert alert-dark" *ngIf="cancha.turnos_disponibles==0; else elseBlock">AGOTADOS</span>
  				<ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template>
 			</td>
-			<!--span *ngIf="cancha.turnos_disponibles==0; then thenBlock else elseBlock"-->
-			<!--ng-template #thenBlock>TURNOS AGOTADOS</ng-template-->
-			<!--ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template></span>-->
 			<td>
 				<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cacha)">-</button> 
-				<!--{{cancha.turnos}}-->
+				<!--{{cancha.turnos}} si anda asi -->
 				<input class="col-md-2 mb-1" type="text" [(ngModel)]="cancha.turnos"/>
 				<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cacha)">+</button>
 			</td>
