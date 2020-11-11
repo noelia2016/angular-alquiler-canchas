@@ -18,14 +18,14 @@
 			<td>{{cancha.precio | currency}}</td>
 			<td>
 				<span class="alert alert-dark" *ngIf="cancha.turnos_disponibles==0; else elseBlock">AGOTADOS</span>
- 				<ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template>
+				<ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template>
 			</td>
 			<td>
-				<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cacha)">-</button> 
+				<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cacha.turnos)">-</button>
 				<!--{{cancha.turnos}} si anda asi -->
 				<input class="col-md-2 mb-1" type="text" [(ngModel)]="cancha.turnos"/>
-				<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cacha)">+</button>
+				<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cacha.turnos)">+</button>
 			</td>
-	    </tr>
+		</tr>
 	</tbody>
 </table>
