@@ -21,10 +21,10 @@
 				<ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template>
 			</td>
 			<td>
-				<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cacha.turnos)">-</button>
+				<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cancha)">-</button>
 				<!--{{cancha.turnos}} si anda asi -->
-				<input class="col-md-2 mb-1" type="text" [(ngModel)]="cancha.turnos"/>
-				<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cacha.turnos)">+</button>
+				<input class="col-md-2 mb-1" type="text" [(ngModel)]="cancha.tur"/>
+				<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cancha)">+</button>
 			</td>
 		</tr>
 	</tbody>
