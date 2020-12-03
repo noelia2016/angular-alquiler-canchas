@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CanchaListComponent } from './cancha-list/cancha-list.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import { CanchaAboutComponent } from './cancha-about/cancha-about.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { CanchaContactComponent } from './cancha-contact/cancha-contact.component';
