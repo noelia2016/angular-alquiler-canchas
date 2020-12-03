@@ -20,11 +20,11 @@
 				<span class="alert alert-dark" *ngIf="cancha.turnos_disponibles==0; else elseBlock">AGOTADOS</span>
 				<ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template>
 			</td>
-			<td>
-				<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cancha)">-</button>
-				<!--{{cancha.turnos}} si anda asi -->
-				<input class="col-md-2 mb-1" type="number" [(ngModel)]="cancha.turnos_disponibles"/>
-				<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cancha)">+</button>
+			<td *ngIf="cancha.turnos_disponibles>0">
+					<button type="button" class="btn btn-secondary btn-sm" (click)="downTurnos(cancha)">-</button>
+					<!--{{cancha.turnos}} si anda asi -->
+					<input class="col-md-2 mb-1" type="text" [(ngModel)]="cancha.turnos"/>
+					<button type="button" class="btn btn-secondary btn-sm" (click)="upTurnos(cancha)">+</button>
 			</td>
 		</tr>
 	</tbody>
