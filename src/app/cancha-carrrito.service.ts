@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Cancha } from './cancha-list/cancha';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CanchaCarrritoService {
-	agregarAlCarrito(cancha: Cancha){
-		throw new Error 'Method not implemented';
-	}
+	agregarCancha(cancha: Cancha){
+		}
 
   	constructor() { }
 }

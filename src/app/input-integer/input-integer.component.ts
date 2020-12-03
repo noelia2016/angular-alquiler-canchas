@@ -23,7 +23,7 @@ export class InputIntegerComponent implements OnInit {
   	quantityChange: EventEmitter<number> = new EventEmitter<number>();
 
 @Output()
-	maxReached: EventEmitter<string> = new EventEmitter<string>();;
+	maxReached: EventEmitter<string> = new EventEmitter<string>();
 
   downQuantity(): void {
     if (this.quantity > 0){

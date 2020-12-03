@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancha } from './cancha';
-import { CanchaCarritoService } from '../cancha-carrrito.service';
+import { CanchaCarrritoService } from '../cancha-carrrito.service';
 
 @Component({
   selector: 'app-cancha-list',
@@ -68,10 +68,10 @@ export class CanchaListComponent implements OnInit {
 
   ]
 
-  carro: CanchaCarritoService;
+  carro: CanchaCarrritoService;
 
   constructor() { 
-    this.carro = new CanchaCarritoService();
+    this.carro = new CanchaCarrritoService();
   }
 
   ngOnInit(): void {

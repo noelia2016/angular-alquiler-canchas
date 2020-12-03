@@ -21,7 +21,7 @@
 				<ng-template #elseBlock>{{cancha.turnos_disponibles}}</ng-template>
 			</td>
 			<td>
-				<app-input-integer [(quantity)]="cancha.turnos" [max]="cancha.turnos_disponibles" *ngIf="cancha.turnos_disponibles"> <!-- (maxReached)=maxReached($event)--></app-input-integer>
+				<app-input-integer [(quantity)]="cancha.turnos" [max]="cancha.turnos_disponibles" *ngIf="cancha.turnos_disponibles" (maxReached)=maxReached($event)></app-input-integer>
 			</td>
 		</tr>
 	</tbody>
