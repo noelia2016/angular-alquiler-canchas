@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancha } from './cancha';
+import { CanchaCarritoService } from '../cancha-carrrito.service';
 
 @Component({
   selector: 'app-cancha-list',
@@ -67,20 +68,22 @@ export class CanchaListComponent implements OnInit {
 
   ]
 
-  constructor() { }
+  carro: CanchaCarritoService;
+
+  constructor() { 
+    this.carro = new CanchaCarritoService();
+  }
 
   ngOnInit(): void {
     
   }
 
-  downTurnos(cancha: Cancha): void {
-    if (cancha.turnos > 0)
-      cancha.turnos--;
+  
+  agregarAlCarrito(cancha): void {
+    this.carro.agregarCancha(cancha);
   }
 
-  upTurnos(cancha: Cancha): void {
-    if (cancha.turnos < cancha.turnos_disponibles)
-      cancha.turnos++;
+  maxReached (m: string){
+    alert(m);
   }
-
 }

@@ -10,6 +10,7 @@ import { CanchaContactComponent } from './cancha-contact/cancha-contact.componen
 import { ComplejoCanchasComponent } from './complejo-canchas/complejo-canchas.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { CanchaAboutComponent } from './cancha-about/cancha-about.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CanchaAboutComponent } from './cancha-about/cancha-about.component';
     CanchaContactComponent,
     ComplejoCanchasComponent,
     CarritoComponent,
-    CanchaAboutComponent
+    CanchaAboutComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
