@@ -70,7 +70,7 @@ export class CanchaListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    
   }
 
   downTurnos(cancha: Cancha): void {
