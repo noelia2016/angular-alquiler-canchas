@@ -11,6 +11,7 @@ import { ComplejoCanchasComponent } from './complejo-canchas/complejo-canchas.co
 import { CarritoComponent } from './carrito/carrito.component';
 import { CanchaAboutComponent } from './cancha-about/cancha-about.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { CanchaCarrritoService } from './cancha-carrrito.service';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,14 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
     ComplejoCanchasComponent,
     CarritoComponent,
     CanchaAboutComponent,
-    InputIntegerComponent
+    InputIntegerComponent,    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CanchaCarrritoService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

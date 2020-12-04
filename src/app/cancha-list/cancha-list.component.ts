@@ -68,19 +68,21 @@ export class CanchaListComponent implements OnInit {
 
   ]
 
-  carro: CanchaCarrritoService;
-
-  constructor() { 
-    this.carro = new CanchaCarrritoService();
+  constructor(private carro: CanchaCarrritoService ) { 
   }
 
   ngOnInit(): void {
-    
+     /* this.carro._cartList.subscribe(canchas => this.canchas=canchas); */
   }
 
   
   agregarAlCarrito(cancha): void {
+    /* lo agrega al carrito */
     this.carro.agregarCancha(cancha);
+    /* lo descuenta del stock disponible */
+    cancha.turnos_disponibles-=cancha.turnos;
+    /* pone en 0 la cantidad solicitada para la nueva compra */
+    cancha.turnos = 0;
   }
 
   maxReached (m: string){
