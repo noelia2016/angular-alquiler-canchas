@@ -7,14 +7,13 @@
 			</div-->
 		</div>
 		<!--end shopping-cart-header -->
-		<h1>Carrito de compras</h1>
 		<ul class="shopping-cart-items">
-			<li class="clearfix" *ngFor="let c of (cartList$ | asycn)">
-				<span class="item-nro">{{c.nro}}</span>
-				<span class="item-tipo">{{c.tipo}}</span>
-				<span class="item-precio">${{c.price}}</span>
-				<span class="item-quantity">Cantidad: {{c.turnos}}</span>
-				<button type="button" class="btn btn-danger ml-4" (click)="remove(c)">Quitar</button>
+			<li class="clearfix" *ngFor="let cancha of (cartList$ | async)">
+				<span class="item-nro">{{cancha.nro}}</span>
+				<span class="item-tipo">{{cancha.tipo}}</span>
+				<span class="item-precio">${{cancha.precio}}</span>
+				<span class="item-quantity">Cantidad: {{cancha.turnos}}</span>
+				<!--button type="button" class="button" (click)="quitarDelCarrito(cancha)">Quitar</button-->
 			</li>
 		</ul>
 		<a href="#" class="button">Comprar</a>

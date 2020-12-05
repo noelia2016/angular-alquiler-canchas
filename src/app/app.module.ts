@@ -32,9 +32,5 @@ import { CanchaCarrritoService } from './cancha-carrrito.service';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-    art={
-    codigo:null,
-    descripcion:null,
-    precio:null
-  }
+    
  }

@@ -72,7 +72,6 @@ export class CanchaListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-     /* this.carro._cartList.subscribe(canchas => this.canchas=canchas); */
   }
 
   
@@ -80,7 +79,7 @@ export class CanchaListComponent implements OnInit {
     /* lo agrega al carrito */
     this.carro.agregarCancha(cancha);
     /* lo descuenta del stock disponible */
-    cancha.turnos_disponibles-=cancha.turnos;
+    cancha.turnos_disponibles -=cancha.turnos;
     /* pone en 0 la cantidad solicitada para la nueva compra */
     cancha.turnos = 0;
   }

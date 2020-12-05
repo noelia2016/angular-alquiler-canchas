@@ -8,6 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   templateUrl: './carrito.component.html',
   styleUrls: ['./carrito.component.scss']
 })
+
 export class CarritoComponent implements OnInit {
 
   cartList$: Observable<Cancha[]>;
