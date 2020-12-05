@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancha } from '../cancha-list/Cancha';
-import { Carrito } from './carrito/';
+
 
 @Component({
   selector: 'app-complejo-canchas',

@@ -7,8 +7,8 @@
 
 /* estilos para el pie de pagina */
 footer, nav {
-    background: black;
-    padding: 10px;
+    background: blue;
+    padding: 12px;
     text-align: center;
     font-weight: bold; /* poner en negrita */
     font-size: 18px;
@@ -16,7 +16,9 @@ footer, nav {
     color: white;
 }
 
-table, td, table thead th {
-  border: 1px solid black;
+img {
+    withd: 65px;
+    height: 65px;
+    margin: 8px;
 }
 
