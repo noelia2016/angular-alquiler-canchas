@@ -15,7 +15,7 @@ export class CarritoComponent implements OnInit {
 
   constructor(private carro: CanchaCarrritoService) {
   	/* me subscribo */
-  	carro.cartList.subscribe = ( c => this.cartList$ = c );
+  	this.cartList$ = carro.cartList.asObservable();
   }
 
   ngOnInit(): void {
